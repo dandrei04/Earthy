@@ -1,0 +1,409 @@
+/* LOGIN BOX */
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #AD974F inset;
+    -webkit-box-shadow: 0 0 0px 1000px #AD974F inset;
+    -webkit-text-fill-color: #EAEAEA;
+}
+
+#center-login {
+    transition: .75s all;
+    box-sizing: border-box;
+
+    padding: 2rem;
+    width: 50%;
+    min-height: calc(100vh - 112px);
+    position: relative;
+    text-align: center;
+
+
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background-over-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #231F20;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+#background-over-login:hover {
+    cursor: pointer;
+}
+
+#login-box {
+    max-width: 500px;
+    text-align: center;
+
+    margin: auto;
+}
+
+#login-box h1 {
+    font-family: 'Flamenco', cursive;
+
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+}
+
+#login-box #internet-login {
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+}
+
+#login-box #internet-login h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#login-box #internet-login #fb-login {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+#login-box #internet-login #fb-login img {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+}
+
+#login-box #internet-login #fb-login h1 {
+    font-size: .9rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#login-box #internet-login #fb-login:hover {
+    border-color: #AD974F ;
+    color: #AD974F ;
+    cursor: pointer;
+}
+
+#login-box #internet-login #fb-login:hover h1 {
+    color: #AD974F;
+}
+
+#login-box #internet-login #google-login {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+#login-box #internet-login #google-login img {
+    width: 26px;
+    height: 26px;
+    margin-top: 7px;
+    margin-right: 8px; 
+}
+
+#login-box #internet-login #google-login h1 {
+    font-size: .9rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#login-box #internet-login #google-login:hover {
+    border-color: #AD974F;
+    color: #AD974F;
+    cursor: pointer;
+}
+
+#login-box #internet-login #google-login:hover h1 {
+    color: #AD974F;
+}
+
+#or-title-login {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+#or-title-login h2 { 
+    font-family: 'Spirax', cursive;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 1px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8px;
+    height: 100%;
+}
+
+#or-title-login span {
+    content: '';
+    margin-top: 14px;
+    height: 2px;
+    width: 100%;
+}
+
+#login-box p {
+    font-size: .9rem;
+    text-align: center;
+    padding: .5rem;
+    margin: .75rem 0;
+}
+
+#login-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#login-box form h1 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .2rem .5rem;
+    margin-top: .5rem;
+}
+
+#login-box form input {
+    margin: .5rem;
+    margin-top: .3rem;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    transition: all .5s;
+}
+
+#login-box form button {
+    background-color: #AD974F;
+    border: none;
+    font-size: 1.2rem;
+    padding: .7rem 0;
+    border-radius: 5px;
+    margin: .5rem .5rem;
+    margin-bottom: 0;
+
+    transition: all .5s;
+}
+
+#login-box form button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#login-box #error {
+    margin: 0;
+    font-size: 1rem;
+    color: #9C5158;
+}
+
+#login-box #succes {
+    margin: 0;
+    font-size: 1rem;
+    color: #90EE90;
+}
+
+#login-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+#login-link a {
+    text-decoration: none;
+}
+
+#login-link span {
+    font-weight: bold;  
+}
+
+#login-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* NOW WE MAKE THE CLASEES FOR THE FOCUSED/UNFOCUSED PART */
+.center-login-before {
+    background-color: #231F20;
+}
+.center-login-after {
+    background-color: #EAEAEA;
+}
+
+
+.login-box-before h1 {
+    color: #AD974F;
+    filter: brightness(120%);
+}
+.login-box-after h1 {
+    color: #AD974F;
+    filter: brightness(90%);
+}
+
+
+.login-box-before .internet-login-before .fb-login-before {
+    border: 2px solid #EAEAEA;
+}
+.login-box-after .internet-login-after .fb-login-after {
+    border: 2px solid #231F20;
+}
+
+
+.login-box-before .internet-login-before .fb-login-before h1 {
+    color: #EAEAEA;
+}
+.login-box-after .internet-login-after .fb-login-after h1 {
+    color: #231F20;
+}
+
+
+.login-box-before .internet-login-before .google-login-before {
+    border: 2px solid #EAEAEA;
+}
+.login-box-after .internet-login-after .google-login-after {
+    border: 2px solid #231F20;
+}
+
+
+.login-box-before .internet-login-before .google-login-before h1 {
+    color: #EAEAEA;
+}
+.login-box-after .internet-login-after .google-login-after h1 {
+    color: #231F20;
+}
+
+
+.or-title-login-before h2 {
+    color: #ffffff;
+}
+.or-title-login-after h2 {
+    color: #231F20;
+}
+
+.or-title-login-before span {
+    background-color: #EAEAEA;
+}
+.or-title-login-after span {
+    background-color: #231F20;
+}
+
+
+.login-box-before p {
+    color: #EAEAEA;
+}
+.login-box-after p {
+    color: #231F20;
+    font-weight: bold;
+}
+
+
+.login-box-before form h1 {
+    color: #AD974F;
+}
+.login-box-after form h1 {
+    color: #231F20;
+}
+
+
+.login-box-before form input {
+    background-color: #AD974F;
+    color: #EAEAEA;
+    border: 2px solid #EAEAEA;
+}
+.login-box-after form input {
+    background-color: #AD974F;
+    color: #EAEAEA;
+    border: 2px solid #231F20;
+}
+
+
+.login-box-before form input::placeholder {
+    color: #EAEAEA;
+}
+.login-box-after form input::placeholder {
+    color: #EAEAEA;
+}
+
+
+.login-box-before form input:focus {
+    border: 2px solid #EAEAEA
+}
+.login-box-after form input:focus {
+    border: 2px solid #231F20;
+}
+
+
+.login-box-before form button {
+    color: #EAEAEA;
+    font-weight: normal;
+}
+.login-box-after form button {
+    color: #231F20;
+    font-weight: bold;
+}
+
+
+.login-link-before a {
+    color: #8E793E;
+}
+.login-link-after a {
+    color: #231F20;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    #center-login {
+        width: 100vw;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #login-box #internet-login {
+        display: block;
+        height: 80px;
+    }
+
+    #login-box #internet-login #fb-login {
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        border-bottom: 0px;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    #login-box #internet-login #fb-login h1 {
+        height: auto;
+    }
+
+    #login-box #internet-login #google-login {
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        justify-content: left;
+        padding-left: calc(1rem + 2px);
+    }
+
+    #login-box #internet-login #google-login h1 {
+        height: auto;
+    }
+}
+
