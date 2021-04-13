@@ -1,0 +1,205 @@
+#badges {
+    font-family: 'Josefin Sans', sans-serif; 
+    height: auto;
+    width: 100%;
+    background-color: #AD974F;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    padding: 1.5rem 0;
+    overflow: hidden;
+}
+
+/* THE HEADER */
+#header {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Flamenco', cursive;
+    margin: 0 1rem;
+}
+
+#header span {
+    width: calc(50vw - 150px);
+    max-width: 600px;
+    height: 3px;
+    box-shadow: 2px 2px #ffffff;
+    background-color: #000000;
+    margin-top: 17px;
+}
+
+/* THE CONTENT */
+#badges-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 95%;
+    max-width: 1200px;
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#badge-box {
+    width: 200px;
+    height: 230px;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin: 0 1.5rem 3rem 1.5rem;
+}
+
+#badge-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge-image img {
+    width: 150px;
+    height: 150px;
+}
+
+#badge-text {
+    display: flex;
+}
+
+#badge-text h1 {
+    width: 150px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    margin: 0;
+    background-color: #231F20;
+    color: #ffffff;
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* THE SWTICH BUTTON/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #6DC5A5;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #6DC5A5;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+} 
+
+/* THE NOT APPROVED BOX */
+#badge-background-locked {
+    width: 200px;
+    height: 230px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#badge-over-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 230px;
+
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+#badge-background-locked img {
+    width: 75px;
+    height: 75px;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#badge-background-locked p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+
+    margin: 0;
+    width: 90%;
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    #badges {
+        margin-top: 77px;
+    }
+}

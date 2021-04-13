@@ -1,0 +1,374 @@
+/* SIGNUP BOX */
+
+#center-signup {
+    transition: .75s all;
+    box-sizing: border-box;
+
+    margin-top: 0rem;
+    padding: 2rem;
+    width: 50%;
+    min-height: calc(100vh - 112px);
+    position: relative;
+    text-align: center;
+
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background-over-signup {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 2;
+    background-color: #231F20;
+}
+
+#background-over-signup:hover {
+    cursor: pointer;
+}
+
+#signup-box {
+    max-width: 500px;
+    text-align: center;
+
+    margin:  auto;
+}
+
+#signup-box h1 {
+    font-family: 'Flamenco', cursive;
+
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+}
+
+#signup-box #internet-signup {
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+}
+
+#signup-box #internet-signup h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#signup-box #internet-signup #fb-signup {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+#signup-box #internet-signup #fb-signup img {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+}
+
+#signup-box #internet-signup #fb-signup h1 {
+    font-size: .9rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signup-box #internet-signup #fb-signup:hover {
+    border-color: #AD974F ;
+    color: #AD974F ;
+    cursor: pointer;
+}
+
+#signup-box #internet-signup #fb-signup:hover h1 {
+    color: #AD974F;
+}
+
+#signup-box #internet-signup #google-signup {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+#signup-box #internet-signup #google-signup img {
+    width: 26px;
+    height: 26px;
+    margin-top: 7px;
+    margin-right: 8px; 
+}
+
+#signup-box #internet-signup #google-signup h1 {
+    font-size: .9rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signup-box #internet-signup #google-signup:hover {
+    border-color: #AD974F;
+    color: #AD974F;
+    cursor: pointer;
+}
+
+#signup-box #internet-signup #google-signup:hover h1 {
+    color: #AD974F;
+}
+
+#or-title-signup {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+#or-title-signup h2 { 
+    font-family: 'Spirax', cursive;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 1px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8px;
+    height: 100%;
+}
+
+#or-title-signup span {
+    content: '';
+    margin-top: 14px;
+    height: 2px;
+    width: 100%;
+}
+
+#signup-box p {
+    font-size: 1rem;
+    text-align: left;
+    padding: .5rem;
+    margin-top: 0;
+}
+
+#signup-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#signup-box form input {
+    margin: .5rem;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    transition: all .5s;
+}
+
+#signup-box form button {
+    border: none;
+    font-size: 1.2rem;
+    padding: .7rem 0;
+    border-radius: 5px;
+    margin: 0 .5rem;
+    transition: all .5s;
+    background-color: #AD974F;
+}
+
+#signup-box form button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#signup-box #error {
+    margin: 0;
+    font-size: 1rem;
+    color:#9C5158;
+}
+
+#signup-box #succes {
+    margin: 0;
+    font-size: 1rem;
+    color: #48B059;
+}
+
+/* NOW WE MAKE THE CLASEES FOR THE FOCUSED/UNFOCUSED PART */
+.center-signup-before {
+    background-color: #231F20;
+}
+.center-signup-after {
+    background-color: #EAEAEA;
+}
+
+
+.signup-box-before h1 {
+    color: #AD974F;
+    filter: brightness(120%);
+}
+.signup-box-after h1 {
+    color: #AD974F;
+    filter: brightness(90%);
+}
+
+
+.signup-box-before .internet-signup-before .fb-signup-before {
+    border: 2px solid #EAEAEA;
+}
+.signup-box-after .internet-signup-after .fb-signup-after {
+    border: 2px solid #231F20;
+}
+
+
+.signup-box-before .internet-signup-before .fb-signup-before h1 {
+    color: #EAEAEA;
+}
+.signup-box-after .internet-signup-after .fb-signup-after h1 {
+    color: #231F20;
+}
+
+
+.signup-box-before .internet-signup-before .google-signup-before {
+    border: 2px solid #EAEAEA;
+}
+.signup-box-after .internet-signup-after .google-signup-after {
+    border: 2px solid #231F20;
+}
+
+
+.signup-box-before .internet-signup-before .google-signup-before h1 {
+    color: #EAEAEA;
+}
+.signup-box-after .internet-signup-after .google-signup-after h1 {
+    color: #231F20;
+}
+
+
+.or-title-signup-before h2 {
+    color: #ffffff;
+}
+.or-title-signup-after h2 {
+    color: #231F20;
+}
+
+.or-title-signup-before span {
+    background-color: #EAEAEA;
+}
+.or-title-signup-after span {
+    background-color: #231F20;
+}
+
+
+.signup-box-before p {
+    color: #EAEAEA;
+}
+.signup-box-after p {
+    color: #231F20;
+    font-weight: bold;
+}
+
+
+.signup-box-before form h1 {
+    color: #AD974F;
+}
+.signup-box-after form h1 {
+    color: #231F20;
+}
+
+
+.signup-box-before form input {
+    background-color: #AD974F;
+    color: #EAEAEA;
+    border: 2px solid #EAEAEA;
+}
+.signup-box-after form input {
+    background-color: #AD974F;
+    color: #EAEAEA;
+    border: 2px solid #231F20;
+}
+
+
+.signup-box-before form input::placeholder {
+    color: #EAEAEA;
+}
+.signup-box-after form input::placeholder {
+    color: #EAEAEA;
+}
+
+
+.signup-box-before form input:focus {
+    border: 2px solid #EAEAEA
+}
+.signup-box-after form input:focus {
+    border: 2px solid #231F20;
+}
+
+
+.signup-box-before form button {
+    color: #EAEAEA;
+    font-weight: normal;
+}
+.signup-box-after form button {
+    color: #231F20;
+    font-weight: bold;
+}
+
+
+.signup-link-before a {
+    color: #8E793E;
+}
+.signup-link-after a {
+    color: #231F20;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    #center-signup {
+        width: 100vw;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    #signup-box #internet-signup {
+        display: block;
+        height: 80px;
+    }
+
+    #signup-box #internet-signup #fb-signup {
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        border-bottom: 0px;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    #signup-box #internet-signup #fb-signup h1 {
+        height: auto;
+    }
+
+    #signup-box #internet-signup #google-signup {
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        justify-content: left;
+        padding-left: calc(1rem + 2px);
+    }
+
+    #signup-box #internet-signup #google-signup h1 {
+        height: auto;
+    }
+}
