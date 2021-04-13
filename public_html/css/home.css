@@ -1,0 +1,114 @@
+body {
+    font-family: 'Josefin Sans', sans-serif; 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+
+/* THE BODY DIV*/
+#body {
+    width: 500px;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif; 
+
+    border-left: 2px solid #d6d6d6;
+    border-right: 2px solid #d6d6d6;
+}
+
+/* TOP_BODY */
+#top_body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* CHANGE PART */
+#top-box-top-bar {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+
+    background-color: #6DC5A5;
+    border-bottom: 4px solid #D6D6D6;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#top-box-top-bar h1 {
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+#change {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+    border: none;
+}
+
+#change button {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+#change button img {
+    width: 25px;
+    height: 25px;
+}
+
+#change button img:hover {
+   cursor: pointer;
+}
+
+
+/* THE FOOTER */
+footer {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/* THE RANDOM WIDTH DIV */
+#random-width-div {
+    width: 300px;
+}
+
+@media (max-width: 1120px) {
+    #random-width-div {
+        display: none;
+    }
+}
+
+
+/* MAKE IT RESPONSIVE */
+
+@media (max-width: 588px) {
+    #body {
+        width: calc(100vw - 78px);
+    }
+
+    #top-box-top-bar {
+        width: calc(100vw - 74px);
+    }
+}

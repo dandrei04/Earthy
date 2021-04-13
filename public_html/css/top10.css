@@ -1,0 +1,116 @@
+#top10 {
+    position: fixed;
+    top: 15px;
+    width: 300px;
+    height: calc(100vh - 30px);
+    max-height: 637px;
+
+    border-radius: 15px;
+    background: linear-gradient(#ffae42 30%, #6DC5A5 70%);
+    box-shadow: 2px 2px #231F20;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media (max-height: 667px) {
+    #top10 {
+        border-radius: 15px 0 0 15px;
+        box-shadow: -2px 0px #231F20;
+        border-top: 2px solid #231F20;
+        border-bottom: 2px solid #231F20;
+    }
+}
+
+#top10 #first-header {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: 5px solid #d6d6d6;
+
+    background-image: url('../images/top10.jpg');
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#top10 #first-header h1 {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: fit-content;
+    padding: .2rem .1rem;
+
+    color: #ffae42;
+    text-shadow: 1.5px 1.5px #6DC5A5;
+    background-color: #000000;
+}
+
+#top10 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    padding: 1rem 0 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+}
+
+#top10 #user_box {
+    display: flex;
+    justify-content: left;
+    margin: .5rem;
+}
+
+#top10 #user_box h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    margin-right: 1rem;
+
+    font-size: 1rem; 
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+}
+
+#top10 #user_box h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+
+    height: 35px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+/* MAKE IT RESPONSIVE */
+@media (max-width: 1120px) {
+    #top10 {
+        display: none;
+    }
+}
